@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    background-color: #B3CFCE;
+  }
+  h1{
+    color: #031639; 
+    text-align: center;
+  }
+  h2{
+    color: #031639;
+  }
+  p1{
+    color: #0A5506;
+    text-align: left;
+  }
+  p2{
+    color:#0A5506;
+    text-align: left;
+  }
+  
