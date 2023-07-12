@@ -1,0 +1,125 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    background-color: #fbd722;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  #menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  #menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menu ul li {
+    margin-bottom: 10px;
+  }
+  
+  #menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  section {
+    padding: 20px;
+  }
+  
+  div {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #e6bb13;
+    color: #fff;
+    padding: 10%;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .intro {
+    color: white;
+    z-index: 1;
+    width: 100%;
+    height: 844px;
+    flex-shrink: 0;
+    background-color: #0D258F;
+    background-image: url('decor.png');
+    background-repeat: no-repeat;
+    background-attachment: cover; 
+    background-size: 100% 250%;
+  }
+  
+  .intro2 {
+    position: absolute;
+    top: 701px;
+    background-color: #A2D6F9;
+    z-index: 2;
+    width: 100%;
+    height: 290px;
+    flex-shrink: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%)
+  }
+  
+  .need {
+    position: absolute;
+    top: 960px;
+    bottom: 775px;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    flex-shrink: 0;
+    background: #FFFBEE;
+  }
+  
+  .need2 {
+    position: absolute;
+    top: 1380px;
+    background-color: #A2D6F9;
+    width: 100%;
+    height: 429px;
+    flex-shrink: 0;
+  }
+  
+  .prototype {
+    position: absolute;
+    top: 1809px;
+    background: #0D258F;
+    width: 100%;
+    height: 171px;
+    flex-shrink: 0;
+  }
+  
+  .prototype2 {
+    position: absolute;
+    top: 1990px;
+    background: #FFFBEE;
+    width: 100%;
+    height: 429px;
+    flex-shrink: 0;
+  }
