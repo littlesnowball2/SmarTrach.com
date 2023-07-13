@@ -48,6 +48,13 @@ header {
   color: #e6bb13;
 }
 
+.menu a.active {
+  background-color: white;
+  padding: 20px;
+  color: #e6bb13;
+  text-decoration: none;
+}
+
 /*
 #menu {
   display: none;
