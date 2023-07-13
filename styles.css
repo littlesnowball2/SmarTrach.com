@@ -108,18 +108,10 @@ body {
   
   .prototype {
     position: absolute;
-    top: 1809px;
-    background: #0D258F;
-    width: 100%;
-    height: 171px;
-    flex-shrink: 0;
-  }
-  
-  .prototype2 {
-    position: absolute;
-    top: 1990px;
+    top: 1743px;
     background: #FFFBEE;
     width: 100%;
-    height: 429px;
+    height: 826px;
     flex-shrink: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%)
   }
