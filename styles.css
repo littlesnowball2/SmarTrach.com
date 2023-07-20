@@ -82,8 +82,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90%;
   height: auto;
+  max-width: 150%;
 }
 
 section {
@@ -92,13 +92,19 @@ section {
 
 
 .stLOGO {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
   padding-top: 150px;
-  width: 100%;
+  width: 404;
+  height: 206;
+
+}
+
+#logo {
   position: relative;
   top: 550px;
+  max-width: 100%;
 }
 
 .intro {
@@ -114,19 +120,22 @@ section {
   background-size: 100% 250%;
 }
 
-.image1 {
+.image_format {
   position: relative;
   border-radius: 50px 0px;
   z-index: 3;
   width: 313px;
   height: 291.282px;
+  max-width: 90%;
 }
 
 #image1 {
   position: relative;
   top: 1050px;
+
 }
 
+/*responsive image code */
 div.gallery img {
   width: 100%;
   height: auto;
@@ -156,6 +165,7 @@ div.gallery img {
   }
 }
 
+/*end of responsive image codes*/
 
 .intro2 {
   position: absolute;
@@ -197,9 +207,9 @@ div.gallery img {
   position: absolute;
   top: 2950px;
   bottom: 775px;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
-  height: 1384px;
+  height: 1126px;
   flex-shrink: 0;
   background: #FFFBEE;
 }
@@ -236,6 +246,12 @@ div.gallery img {
   top: -40px;
 }
 
+#image2 {
+  position: relative;
+  top: -700px;
+
+}
+
 .solution {
   position: absolute;
   top: 4000px;
@@ -243,16 +259,56 @@ div.gallery img {
   width: 100%;
   height: 1188px;
   flex-shrink: 0;
+  z-index: -1;
+}
+
+#solution_text {
+  position: relative;
+  top: 450px;
+}
+
+#solution_text ul li {
+  color: #0B1A61;
+  padding: 3%;
+  font-family: Nunito;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  position: relative;
+  left: 10px;
+  top: -70px;
+}
+
+#solution_text hr {
+  position: relative;
+  top: -40px;
 }
 
 .prototype {
   position: absolute;
-  top: 5522px;
+  top: 5180px;
   background: #FFFBEE;
   width: 100%;
   height: 2287px;
   flex-shrink: 0;
+  z-index: 1;
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%)
+}
+
+.image_format2 {
+  position: relative;
+  border-radius: 50px 0px;
+  z-index: 3;
+  width: 319px;
+  height: 188px;
+  max-width: 90%;
+}
+
+#image3 {
+  position: relative;
+  top: -300px;
+  z-index: 3;
 }
 
 .futurework {
