@@ -10,16 +10,6 @@ header {
   color: #fff;
 }
 
-.hamburger {
-  width: 30px;
-  height: 30px;
-  background-color: #fbd722;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
 #menu {
   position: fixed;
   top: 0;
@@ -83,8 +73,6 @@ h1 {
 
 h2 {
   padding-left: 10px;
-  color: #0B1A61;
-  background-color: #FFFBEE;
   font-family: Nunito;
   font-size: 43px;
   font-style: normal;
@@ -179,11 +167,6 @@ div.gallery img {
   max-width: 30%;
 }
 
-#clara_image {
-  position: relative;
-  top: 304px;
-}
-
 .text_box {
   width: 90%;
   height: 120%;
@@ -195,10 +178,19 @@ div.gallery img {
   z-index: 1;
 }
 
+#clara_image {
+  position: relative;
+  top: 304px;
+}
+
 #clara {
   position: relative;
   top: 330px;
   fill: #FFFBEE;
+}
+
+#clara h2 {
+  color: #0B1A61;
 }
 
 #clara p {
@@ -225,6 +217,10 @@ div.gallery img {
   fill: #FFFBEE;
 }
 
+#vamsi h2 {
+  color: #0B1A61;
+}
+
 #vamsi p {
   color: #0D258F;
   font-family: Nunito;
@@ -234,6 +230,33 @@ div.gallery img {
   line-height: 1.6;
   letter-spacing: 1px;
   position: relative;
+}
+
+#soyoung_image {
+  padding-top: 10%;
+  padding-bottom: 2%;
+}
+
+#soyoung {
+  position: relative;
+  top: 0px;
+}
+
+#soyoung h2 {
+  color: #FFFBEE;
+  position: relative;
+  top: -300;
+}
+
+#soyoung p {
+  color: #FFF;
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0;
 }
 
 .vl {
