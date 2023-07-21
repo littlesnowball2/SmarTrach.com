@@ -8,7 +8,7 @@ body {
 header {
   background-color: #0D258F;
   color: #fff;
-  padding: 1%;
+
 }
 
 .hamburger {
@@ -21,8 +21,9 @@ header {
   cursor: pointer;
 }
 
+/*
 .menu {
-  /*position: sticky;*/
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +55,53 @@ header {
   padding: 20px;
   color: #e6bb13;
   text-decoration: none;
+}
+*/
+
+#menu {
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 5;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #0D258F;
+  color: #fff;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0D258F;
+}
+
+#menu li {
+  float: left;
+  border-right: 1px solid #e6bb13;
+}
+
+#menu li:last-child {
+  border-right: none;
+}
+
+
+#menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+
+  font-family: Nunito;
+  font-size: 300%;
+  font-style: 1.6;
+}
+
+#menu li a:hover {
+  background-color: #e6bb13;
 }
 
 h1 {
