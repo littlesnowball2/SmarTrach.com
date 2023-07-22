@@ -3,11 +3,93 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #0D258F;
 }
 
 header {
   background-color: #0D258F;
   color: #fff;
+}
+
+/*background layout*/
+.intro {
+  color: white;
+  z-index: 0;
+  width: 100%;
+  height: 2337px;
+  flex-shrink: 0;
+  background-color: #0D258F;
+  background-image: url('images/decor.png'), url('images/darkblue_texture.png');
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-size: 100% 90%, 100% 100%;
+}
+
+.team {
+  position: absolute;
+  top: 767px;
+  background: #FFFBEE;
+  width: 100%;
+  height: 2087px;
+  flex-shrink: 0;
+  z-index: 0;
+}
+
+.partners {
+  position: absolute;
+  top: 2854px;
+  bottom: 775px;
+  width: 100%;
+  height: 3469px;
+  flex-shrink: 0;
+  background: #0D258F;
+  background-image: url('images/darkblue_texture.png');
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-size: 100% 100%;
+}
+
+.footer {
+  background: #0B1A61;
+  box-shadow: 1px 0px 7px 0px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: absolute;
+  top: 6323px;
+  width: 100%;
+  height: 431px;
+}
+
+/*Start of details*/
+h1 {
+  color: #FFC600;
+  font-family: Nunito;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+h2 {
+  padding-left: 10px;
+  font-family: Nunito;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 #menu {
@@ -20,6 +102,10 @@ header {
   align-items: center;
   background-color: #0D258F;
   color: #fff;
+  background-image: url('images/darkblue_texture.png');
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-size: 100% 100%;
 }
 
 #menu ul {
@@ -28,6 +114,10 @@ header {
   padding: 0;
   overflow: hidden;
   background-color: #0D258F;
+  background-image: url('images/darkblue_texture.png');
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-size: 100% 100%;
 }
 
 #menu li {
@@ -58,51 +148,6 @@ header {
 
 .active {
   background-color: #e6bb13;
-}
-
-
-h1 {
-  color: #FFC600;
-  font-family: Nunito;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  text-transform: capitalize;
-}
-
-h2 {
-  padding-left: 10px;
-  font-family: Nunito;
-  font-size: 43px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.intro {
-  color: white;
-  z-index: 0;
-  width: 100%;
-  height: 2337px;
-  flex-shrink: 0;
-  background-color: #0D258F;
-  background-image: url('images/decor.png');
-  background-repeat: no-repeat;
-  background-attachment: cover;
-  background-size: 100% 150%;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  max-width: 100%;
 }
 
 .image_format {
@@ -148,15 +193,6 @@ div.gallery img {
   }
 }
 
-.team {
-  position: absolute;
-  top: 767px;
-  background: #FFFBEE;
-  width: 100%;
-  height: 2087px;
-  flex-shrink: 0;
-  z-index: 0;
-}
 
 .image_format2 {
   position: relative;
@@ -180,7 +216,7 @@ div.gallery img {
 
 #clara_image {
   position: relative;
-  top: 304px;
+  top: 320px;
 }
 
 #clara {
@@ -207,13 +243,12 @@ div.gallery img {
 
 #vamsi_image {
   position: relative;
-  top: -1350px;
-
+  top: 350px;
 }
 
 #vamsi {
   position: relative;
-  top: -1360px;
+  top: 350px;
   fill: #FFFBEE;
 }
 
@@ -232,9 +267,28 @@ div.gallery img {
   position: relative;
 }
 
+.vl_blue {
+  border-left: 6px solid #0D258F;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+  z-index: 1;
+}
+
+.vl_mizu {
+  border-left: 6px solid#1E96FC;
+  ;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+  z-index: 1;
+}
+
+
 #soyoung_image {
-  padding-top: 10%;
-  padding-bottom: 2%;
+  padding: 0;
 }
 
 #soyoung {
@@ -259,13 +313,92 @@ div.gallery img {
   padding: 0;
 }
 
-.vl {
-  border-left: 6px solid #0D258F;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
-  z-index: 1;
+#andy_image {
+  position: relative;
+  top: 0px;
+}
+
+#andy h2 {
+  color: #FFFBEE;
+  position: relative;
+  top: -300;
+}
+
+#andy p {
+  color: #FFF;
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0;
+}
+
+#leslie_image {
+  position: relative;
+  top: 0px;
+}
+
+#leslie h2 {
+  color: #FFFBEE;
+  position: relative;
+  top: -300;
+}
+
+#leslie p {
+  color: #FFF;
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0;
+}
+
+#thida_image {
+  position: relative;
+  top: 0px;
+}
+
+#thida h2 {
+  color: #FFFBEE;
+  position: relative;
+  top: -300;
+}
+
+#thida p {
+  color: #FFF;
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0;
+}
+
+#kelley_image {
+  position: relative;
+  top: 0px;
+}
+
+#kelley h2 {
+  color: #FFFBEE;
+  position: relative;
+  top: -300;
+}
+
+#kelley p {
+  color: #FFF;
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0;
 }
 
 #vlline {
@@ -278,28 +411,39 @@ div.gallery img {
   height: 10%;
 }
 
-.partners {
+#vlline3 {
   position: absolute;
-  top: 2854px;
-  bottom: 775px;
-  width: 100%;
-  height: 3469px;
-  flex-shrink: 0;
-  background: #0D258F;
+  top: 130px;
+  height: 10%;
 }
+
+#vlline4 {
+  position: absolute;
+  top: 710px;
+  height: 10%;
+}
+
+#vlline5 {
+  position: absolute;
+  top: 1490px;
+  height: 10%;
+}
+
+#vlline6 {
+  position: absolute;
+  top: 2040px;
+  height: 10%;
+}
+
+#vlline7 {
+  position: absolute;
+  top: 2615px;
+  height: 10%;
+}
+
 
 #logov2 {
   padding: 2%;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.footer {
-  background: #0B1A61;
-  box-shadow: 1px 0px 7px 0px rgba(0, 0, 0, 0.25);
-  z-index: 1;
-  position: absolute;
-  top: 6323px;
-  width: 100%;
-  height: 431px;
 }
