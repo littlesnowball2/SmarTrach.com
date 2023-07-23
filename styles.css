@@ -24,13 +24,14 @@ header {
   background-repeat: no-repeat;
   background-attachment: cover;
   background-size: 100% 250%, 100% 100%;
+
 }
 
 .intro2 {
   position: absolute;
-  /*top: 2337px;*/
+  top: 2337px;
   background-color: #A2D6F9;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 803px;
   flex-shrink: 0;
@@ -45,7 +46,7 @@ header {
   position: absolute;
   top: 2950px;
   bottom: 775px;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   height: 1126px;
   flex-shrink: 0;
@@ -58,8 +59,8 @@ header {
   background-color: #A2D6F9;
   width: 100%;
   height: 1288px;
-  flex-shrink: 0;
-  z-index: -1;
+  flex-shrink: 1;
+  z-index: 2;
   background-image: url('images/lightblue_texture.png');
   background-repeat: no-repeat;
   background-attachment: cover;
@@ -73,13 +74,13 @@ header {
   width: 100%;
   height: 2487px;
   flex-shrink: 0;
-  z-index: -2;
+  z-index: 1;
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%)
 }
 
 .futurework {
   background: #0D258F;
-  z-index: -3;
+  z-index: 0;
   position: absolute;
   top: 7300px;
   width: 100%;
@@ -133,6 +134,7 @@ img {
   margin-right: auto;
   height: auto;
   max-width: 150%;
+  z-index: 3;
 }
 
 /*Header menu*/
@@ -150,7 +152,7 @@ img {
   position: fixed;
   top: 0;
   display: flex;
-  z-index: 5;
+  z-index: 3;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -226,9 +228,14 @@ img {
 }
 
 #image1 {
-  position: relative;
-  top: 1050px;
+  position: absolute;
+  top: 1650px;
+  z-index: 5;
+}
 
+#image_position {
+  position: absolute;
+  z-index: 5;
 }
 
 /*responsive image code */
@@ -327,7 +334,7 @@ div.gallery img {
 
 #image2 {
   position: relative;
-  top: -700px;
+  top: -330px;
 
 }
 
@@ -342,7 +349,7 @@ div.gallery img {
 
 #solution_text {
   position: relative;
-  top: 400px;
+  top: -200px;
 }
 
 #solution_text h2 {
@@ -405,13 +412,15 @@ div.gallery img {
 
 #image4 {
   position: relative;
-  padding: 5%;
   top: 1%;
 }
 
 #graph {
-  padding: 8%;
+  position: relative;
+  top: 8%;
+  padding-top: 200px;
 }
+
 
 #futurework_text {
   position: relative;
